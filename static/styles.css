@@ -1,0 +1,113 @@
+/* Reset básico de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Cor do texto em branco */
+    background-color: #fff; /* Cor de fundo clara */
+    background-image: url('background.jpg'); /* Substitua com o caminho da nova imagem */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background: rgba(0, 0, 0, 1); /* Cor de fundo preta com opacidade */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilizando o conteúdo principal */
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.8); /* Cor de fundo preta com opacidade */
+    color: #fff; /* Cor do texto em branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+/* Estilizando os títulos */
+h1, h2 {
+    color: #fff; /* Títulos em branco */
+}
+
+/* Estilizando a lista de projetos */
+ul {
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid #444; /* Borda cinza escuro */
+    padding: 10px 0;
+}
+
+li h2 {
+    margin-bottom: 5px;
+}
+
+/* Estilizando o rodapé */
+footer {
+    background: rgba(0, 0, 0, 0.7); /* Cor de fundo preta com opacidade */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilizando a imagem de perfil */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 5px solid #fff; /* Borda branca ao redor da imagem de perfil */
+}
+
+/* Tornando o layout responsivo */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile-img {
+        width: 120px; /* Ajuste conforme necessário */
+        height: 120px; /* Ajuste conforme necessário */
+    }
+}

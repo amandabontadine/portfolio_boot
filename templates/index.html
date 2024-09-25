@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Início</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('projects') }}">Meus Projetos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4 text-center">
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <img src="{{ url_for('static', filename='amandafofa.jpeg') }}" alt="Perfil" class="profile-img rounded-circle" style="width: 150px; height: 150px;">
+        <p class="mt-4">Atualmente estou no 4º semestre do curso de Ciência da Computação na Unimax, onde estou aprofundando meus conhecimentos em tecnologia e desenvolvimento de software. No campo profissional, trabalho na Senior Sistemas como analista de suporte para sistemas ERP, onde sou responsável por garantir o funcionamento eficiente e a resolução de problemas relacionados aos sistemas que gerencio.</p>
+        <p>Além disso, já acumulei experiência significativa atuando como analista de sistemas para APIs, o que me proporcionou uma visão abrangente sobre integração e desenvolvimento de soluções tecnológicas. Estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades e continuar crescendo na área da computação.</p>
+    </main>
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Amanda Scaranello Bontadine. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
